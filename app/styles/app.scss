@@ -1,15 +1,20 @@
-.cal-container{
+// $event-height: 45px;
 
+
+.cal-container{
+  position: relative;
   width: 620px;
   height: 720px;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: blue;
+  background-color: #f1f1f1;
 
 }
 
 .event{
-  height: 55px;
-  width:100%;
+  position: absolute;
+  top:50px;
+  left: 20px;
   border: solid;
+  width:500px;
 }
