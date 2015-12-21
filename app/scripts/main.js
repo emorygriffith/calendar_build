@@ -6,13 +6,21 @@ var events = {
 
 
 
-//on click
-// $(".button1").click(function() {
-//loop over array of objects adn console log each height and width
+
   $.each(events, function(key, value){
-    console.log("My height is " + (value.end - value.start));
-    //console.log(value.start)
+    var h = value.end - value.start;
+    var height = h.toString();
+
+
+
   });
+
+
+
+
+  // $( "div.example" ).css( "width", function( index ) {
+  // return index * 50;
+// });
 
 
 
@@ -27,7 +35,7 @@ var events = {
 //
 //
 //
-// //  $( ".cal-container" ).append( "<div class=event>Test</div>" );
+// //
 //   //$(".cal-container").css("background-color", "yellow");
 //
 //
