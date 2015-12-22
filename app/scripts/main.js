@@ -5,12 +5,17 @@ var events = {
 };
 
 
-
+  $('<div class=\'box\' style=\'width:100%;height:40px;\'/>').appendTo('.cal-container');
 
   $.each(events, function(key, value){
-    var h = value.end - value.start;
-    var height = h.toString();
+    var height = value.end - value.start;
+    console.log(height);
 
+    function createDiv(height){
+
+    $('<div class=\'box\' style=\'width:100%;height:'+height+'px;\'/>').appendTo('.cal-container');
+
+}
 
 
   });
