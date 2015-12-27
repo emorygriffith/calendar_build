@@ -5,32 +5,28 @@ var data = {
     event3: {start: 700, end: 720}  // an event from 8:40pm to 9pm
 };
 
-$.each(data, function(){
 
-    var start = this.start;
-    var end = this.end;
-    var height = this.end - this.start;
+var y = $.each(data, function(){
 
-    //setup the Backbone Model
+    var top = this.end - this.start;
+    var left = 0;
+
     var Event = Backbone.Model.extend({
       defaults: {
-        start: start,
-        end: end,
-        height: height
+        top: top,
+        left: left
       },
 
       initialize: function(){
-              var s = this.get("start");
-              var e = this.get("end");
-              var h = this.get("height");
-              console.log("A new Event has been added. It has the following properties: Start: "+ s + ", End: " + e + " , Height: " +h);
+              var t = this.get("top");
+              var l = this.get("left");
+              console.log("A new Event has been added. It has the following properties: Top: " + t + ", Left: " + l);
             },
     });
 
-    new Event(); //instantiate each model
+    var x = new Event();
+    console.log(x);
 
+});
 
-
-
-
-}); //end $.each loop
+console.log(y);
