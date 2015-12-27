@@ -43,12 +43,7 @@ $.each(data, function(){
 
   console.log(event);
 
-
-
-
-
-
-
+  Events.add(event);
 
 
 });
