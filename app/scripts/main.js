@@ -7,15 +7,13 @@ var data = {
 
 //Create Event Model
 var Event = Backbone.Model.extend({
+
   defaults: {
     top: 0,
     left: 0
   },
-
   initialize: function(){
-          var t = this.get("top");
-          var l = this.get("left");
-          //console.log("A new Event has been added. It has the following properties: Top: " + t + ", Left: " + l);
+          console.log("New Event initialized.")
         },
 });
 
@@ -30,20 +28,30 @@ var EventCollection = Backbone.Collection.extend({
 var Events = new EventCollection;
 
 
-//loop through JSON data and add objects the events collection
+//loop through JSON data and det the attributes of each Event object, then add it to the Events collection
 $.each(data, function(){
+
+console.log("im in the each loop");
 
   var event = new Event();
 
+  var start = this.start;
+  var end = this.end;
   var the_top = this.end - this.start;
   var the_left = 0;
 
+  event.set("start", start);
+  event.set("end", end);
   event.set("top",the_top);
   event.set("left", the_left);
-
-  console.log(event);
 
   Events.add(event);
 
 
 });
+
+console.log(Events);
+
+
+
+console.log("Hello");
