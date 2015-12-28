@@ -12,11 +12,12 @@
 }
 
 .event{
+  //float:left; //this takes it out of the natural flow.. doing this bc it allows me to not use "top", which has built in margins. now i just use margin-top;
   position: relative;
   // top:50px;
   // left: 20px;
   border: solid;
-  // width:500px;
-  // height: 400px;
+  width: 30%;
+    // height: 400px;
 
 }

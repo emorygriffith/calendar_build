@@ -37,17 +37,19 @@ $.each(data, function(){
 
   var start = this.start;
   var end = this.end;
-  var the_top = this.end - this.start;
+  var top = this.start;
+  var the_height = this.end - this.start;
   var the_left = 0;
 
   event.set("start", start);
   event.set("end", end);
-  event.set("top",the_top);
+  event.set("top", top);
   event.set("left", the_left);
+  event.set("height", the_height)
 
   Events.add(event);
 
-  var div = "<div class='event' style='top:" + event.attributes.top + "px;'> Hello, I'm a test div and my start time is " + event.attributes.start + "</div>"
+  var div = "<div class='event' style='top:" + event.attributes.top + "px; margin-bottom: -" + event.attributes.top + "px;'> Hello, I'm a test div and my start time is " + event.attributes.start + "</div>"
   $('.cal-container').append(div);
 
 });
