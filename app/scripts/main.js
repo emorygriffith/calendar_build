@@ -47,7 +47,7 @@ $.each(data, function(){
 
   Events.add(event);
 
-  var div = "<div class='event' style='top:" + event.attributes.start + "px;'> Hello, I'm a test div and my start time is " + event.attributes.start + "</div>"
+  var div = "<div class='event' style='top:" + event.attributes.top + "px;'> Hello, I'm a test div and my start time is " + event.attributes.start + "</div>"
   $('.cal-container').append(div);
 
 });
