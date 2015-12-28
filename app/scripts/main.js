@@ -31,7 +31,7 @@ var Events = new EventCollection;
 //loop through JSON data and det the attributes of each Event object, then add it to the Events collection
 $.each(data, function(){
 
-console.log("im in the each loop");
+
 
   var event = new Event();
 
@@ -47,11 +47,9 @@ console.log("im in the each loop");
 
   Events.add(event);
 
+  var div = "<div class='event' style='top:" + event.attributes.start + "px;'> Hello, I'm a test div and my start time is " + event.attributes.start + "</div>"
+  $('.cal-container').append(div);
 
 });
 
 console.log(Events);
-
-
-
-console.log("Hello");
