@@ -49,7 +49,7 @@ $.each(data, function(){
 
   Events.add(event);
 
-  var div = "<div class='event' style='height: " + event.attributes.height + "px; margin-top:" + event.attributes.top + "px;'> THIS IS A DIV </div>"
+  var div = "<div class='event' style='height: " + event.attributes.height + "px; top:" + event.attributes.top + "px; margin-top: -"+event.attributes.height+"px;'> THIS IS A DIV </div>"
 
 
   $('.cal-container').append(div);
