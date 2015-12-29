@@ -1,15 +1,37 @@
 .time{
   height:30px;
   width:100%;
-  border-bottom: 1px solid;
+  span{
+    display:inline-block;
+  }
+
+  .primary{
+    font-weight: bold;
+    font-size: 17px;
+    color:#666666;
+    float:left;
+    margin-left: 11px;
+
+  }
+
+  .secondary{
+    font-size: 10px;
+    color:#C6C6C6;
+    float:right;
+    margin-right: 12px;
+    padding-top: 7px;
+
+  }
 }
+
+
 
 .numbers{
   float:left;
-  border:solid 1px;
   height:720px;
   width:90px;
   margin-left: -90px;
+  margin-top: -14px;
 }
 
 .cal-container{
@@ -33,9 +55,10 @@
 .event{
   position: relative;
   border: solid;
-
   float:left;
-
 }
 
-//need to figure out a way to set widths dynamically
+.title{
+  margin: 0 px;
+  padding: 0 px;
+}
