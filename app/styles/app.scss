@@ -1,12 +1,28 @@
+.time{
+  height:30px;
+  width:100%;
+  border-bottom: 1px solid;
+}
+
+.numbers{
+  float:left;
+  border:solid 1px;
+  height:720px;
+  width:90px;
+  margin-left: -90px;
+}
+
 .cal-container{
   position: absolute;
   width: 620px;
   height: 720px;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #f1f1f1;
+  background-color: #ECECEC;
   display: table;
   table-layout: fixed;
+
+
 }
 
 .cal-container div{
