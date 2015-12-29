@@ -5,14 +5,19 @@
   padding-left: 10px;
   padding-right: 10px;
   background-color: #f1f1f1;
+  display: table;
+  table-layout: fixed;
+}
 
-
+.cal-container div{
+  display: table-cell;
+  height: 50px;
 }
 
 .event{
   position: relative;
   border: solid;
-  width: 30%;
+
   float:left;
 
 }
