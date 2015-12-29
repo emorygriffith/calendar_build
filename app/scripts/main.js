@@ -5,6 +5,8 @@ var data = {
     event3: {start: 700, end: 720}  // an event from 8:40pm to 9pm
 };
 
+
+
 //Create Event Model
 var Event = Backbone.Model.extend({
 
