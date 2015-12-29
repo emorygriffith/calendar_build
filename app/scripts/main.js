@@ -29,7 +29,9 @@ var Events = new EventCollection;
 
 
 //loop through JSON data and det the attributes of each Event object, then add it to the Events collection
-$.each(data, function(){
+var layoutDay = function(){
+
+  $.each(data, function(){
 
 
 
@@ -57,3 +59,9 @@ $.each(data, function(){
 });
 
 console.log(Events);
+
+};
+
+
+//call function to layout the day
+layoutDay();
