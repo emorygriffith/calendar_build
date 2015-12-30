@@ -1,3 +1,14 @@
+.container{
+  margin-top:75px;
+}
+
+.numbers{
+  float:left;
+  width:90px;
+  margin-left: -90px;
+  margin-top: -14px;
+}
+
 .time{
   height:30px;
   width:100%;
@@ -25,15 +36,6 @@
 }
 
 
-
-.numbers{
-  float:left;
-  height:720px;
-  width:90px;
-  margin-left: -90px;
-  margin-top: -14px;
-}
-
 .cal-container{
   position: absolute;
   width: 620px;
@@ -43,8 +45,6 @@
   background-color: #ECECEC;
   display: table;
   table-layout: fixed;
-
-
 }
 
 .cal-container div{
@@ -53,9 +53,14 @@
 }
 
 .event{
-  position: relative;
-  border: solid;
   float:left;
+  background-color:#FFFFFF;
+  padding: 8px;
+  position: relative;
+  border-left: 5px solid #1759A2;
+  border-top:1px solid #DDDDDD;;
+  border-right: 1px solid #DDDDDD;;
+  border-bottom: 1px solid #DDDDDD;;
 }
 
 .title{
