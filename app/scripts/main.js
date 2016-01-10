@@ -54,6 +54,8 @@ var layoutDay = function(){
 
 
         $('.cal-container').append(div);
+        
+
 
       }); //end each loop
 

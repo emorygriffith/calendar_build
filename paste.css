@@ -51,8 +51,8 @@
 }
 
 .cal-container div{
-   //width:100%;
-  //display: table;
+  // width:100%;
+  // display: table-cell;
   //height: 50px;
 }
 
@@ -65,7 +65,9 @@
   border-top:2px solid #DDDDDD;
   border-right: 2px solid #DDDDDD;
   border-bottom: 2px solid #DDDDDD;
-  width: 150px;
+  //width: 150px;
+
+
 }
 
 .title{
