@@ -28,7 +28,6 @@ var EventCollection = Backbone.Collection.extend({
 //Instantiate the Events Collection
 var Events = new EventCollection;
 
-
 //loop through JSON data and det the attributes of each Event object, then add it to the Events collection
 var layoutDay = function(){
 
@@ -54,7 +53,7 @@ var layoutDay = function(){
 
 
         $('.cal-container').append(div);
-        
+
 
 
       }); //end each loop
