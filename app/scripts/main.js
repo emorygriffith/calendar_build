@@ -49,10 +49,16 @@ var layoutDay = function(){
 
         Events.add(event);
 
-        var div = "<div class='event' style='height: " + event.attributes.height + "px; margin-top:" + event.attributes.top + "px;'><p class='title'>Sample Item</p><p class='location'>Sample Location</p></div>"
+        var eventID = event.cid
+
+        console.log(event);
+
+
+        var div = "<div id='" + eventID + "' class='event' style='height: " + event.attributes.height + "px; margin-top:" + event.attributes.top + "px;'><p class='title'>Sample Item</p><p class='location'>Sample Location</p></div>"
 
 
         $('.cal-container').append(div);
+
 
 
 
